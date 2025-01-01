@@ -1,15 +1,15 @@
 {
-  "name": "discord-app",
-  "version": "1.0.0",
-  "description": "Discord App for learning",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Sanketh Bennur",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^14.16.3",
-    "dotenv": "^16.4.7"
-  }
+	"name": "discord-app",
+	"version": "1.0.0",
+	"description": "Discord App for learning",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Sanketh Bennur",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^14.16.3",
+		"dotenv": "^16.4.7"
+	}
 }
