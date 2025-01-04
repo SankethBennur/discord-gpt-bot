@@ -1,4 +1,5 @@
 const { server_id, devs } = require("../../../config.json");
+const command = require("../../commands/economy/getlevel");
 const get_local_commands = require("../../utils/get_local_commands");
 
 module.exports = async (client, interaction) =>
@@ -10,7 +11,7 @@ module.exports = async (client, interaction) =>
 	try
 	{
 		const command_ = local_commands_
-			.find((cmd_) => (cmd_ === interaction.commandName));
+			.find((cmd_) => (cmd_.name === interaction.commandName));
 
 		// Validate if command is developer only
 		if (command_.devOnly && !devs.includes(interaction.member.id))

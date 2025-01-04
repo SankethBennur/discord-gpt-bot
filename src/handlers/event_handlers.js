@@ -1,5 +1,6 @@
 const path = require("path");
 const get_all_files = require("../utils/get_all_files");
+const { Events } = require("discord.js");
 
 /**
  * 
@@ -24,12 +25,15 @@ const event_handler = (client) =>
 
 		event_file_list_.sort((a, b) => (a > b));
 
+		// Adding event listeners here
 		client.on(event_name_, async (arg) =>
 		{
+			/**
+			 * Callback function to execute the callback function of event!
+			 */
+
 			for (const event_file_ of event_file_list_)
 			{
-				console.log(`Event: ${event_name_} => ${event_file_}`);
-
 				const event_handler_fn_ = require(event_file_);
 
 				await event_handler_fn_(client, arg);
