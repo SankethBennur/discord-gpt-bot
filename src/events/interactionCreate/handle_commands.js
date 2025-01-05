@@ -44,7 +44,7 @@ module.exports = async (client, interaction) =>
 			{
 				const bot_ = interaction.guild.members.me;
 
-				if (!bot_.permissions.has().permission_)
+				if (!bot_.permissions.has(permission_))
 				{
 					interaction.reply(
 						{

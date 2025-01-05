@@ -28,9 +28,7 @@ const event_handler = (client) =>
 		// Adding event listeners here
 		client.on(event_name_, async (arg) =>
 		{
-			/**
-			 * Callback function to execute the callback function of event!
-			 */
+			// Callback function to execute the callback function of event!
 
 			for (const event_file_ of event_file_list_)
 			{

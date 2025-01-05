@@ -71,7 +71,6 @@ const command = {
 			Sorting records of all levels,
 			if levels are the same,
 				sort by their XP
-			
 			*/
 			all_level_records_.sort(
 				(a, b) => (
