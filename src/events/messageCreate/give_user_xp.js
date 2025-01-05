@@ -46,7 +46,7 @@ const get_user_xp = async (client, message) =>
 			data_level_.xp -= get_level_xp(data_level_.level);
 			++data_level_.level;
 
-			message.channel.send(`User - ${message.author.tag} has **leveled up to ${level.level}**`);
+			message.channel.send(`User - ${message.author.tag} has **leveled up to ${data_level_.level}**`);
 		}
 
 		// Save the modified level data

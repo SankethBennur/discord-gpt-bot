@@ -1,10 +1,10 @@
 const path = require("path");
 const get_all_files = require("../utils/get_all_files");
-const { Events } = require("discord.js");
+const { Client, Events } = require("discord.js");
 
 /**
  * 
- * @param {} Client  Bot client
+ * @param {Client} Client  Bot client
  */
 const event_handler = (client) =>
 {
